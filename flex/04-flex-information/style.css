@@ -12,6 +12,24 @@ img {
   font-weight: 900;
 }
 
+/* my input */
+.title, .plants {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  margin-bottom: 32px;
+}
+
+.plants {
+  gap: 52px;
+}
+.plants div {
+  width: 200px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 /* do not edit this footer */
 .footer {
   position: fixed;

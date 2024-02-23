@@ -70,3 +70,7 @@ a {
   color: white;
   text-decoration: none;
 }
+
+li {
+  margin-bottom: 16px;
+}

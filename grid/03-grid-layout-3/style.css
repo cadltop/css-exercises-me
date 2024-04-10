@@ -96,17 +96,12 @@
   grid-template-columns: 1fr 4fr;
   gap: 4px;
 }
+
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;
   align-items: center;
-}
-
-.header ul {
-  list-style: none;
-  display: grid;
-  grid-auto-flow: column;
 }
 
 .logo {
@@ -115,11 +110,15 @@
 
 .menu ul, .nav ul  {
   display: grid;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
 }
 
 .sidebar {
   display: grid;
   gap: 50px;
+  grid-row: 2 / 4;
 }
 
 .sidebar > * {

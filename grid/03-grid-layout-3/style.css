@@ -89,3 +89,58 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* my code */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.menu ul, .nav ul  {
+  display: grid;
+}
+
+.sidebar {
+  display: grid;
+  gap: 50px;
+}
+
+.sidebar > * {
+  justify-self: center;
+  align-self: center;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.article .card {
+  height: 200px;
+}
+
+.header, .footer {
+  grid-column: 1 / 3;
+}
+
+.nav, .article {
+  grid-column: 2 / 3;
+}
